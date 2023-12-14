@@ -1,0 +1,30 @@
+.navbar {
+  background-color: chocolate;
+  display: flex;
+  padding: 20px;
+  font-size: 1.5rem;
+  gap: 20px;
+  color: white;
+}
+
+.box {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+}
+#tickettype {
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+  color: white;
+}
+#qty {
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+  color: white;
+}
+option {
+  background-color: chocolate;
+  padding: 10px;
+}
