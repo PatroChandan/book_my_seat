@@ -82,8 +82,6 @@ ul li {
 
 .hover:hover {
   cursor: pointer;
-  /* filter: invert(95%) sepia(41%) saturate(6882%) hue-rotate(54deg)
-    brightness(90%) contrast(108%); */
   color: rgb(234, 174, 61);
 }
 
