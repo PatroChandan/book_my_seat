@@ -77,7 +77,6 @@ const Seat = (props) => {
   );
 
   function resetSelection(arr) {
-    // Iterate through the nested array and set isSelected to false for all objects
     for (let i = 0; i < arr.length; i++) {
       for (let j = 0; j < arr[i].length; j++) {
         arr[i][j].isSelected = false;
@@ -106,11 +105,9 @@ const Seat = (props) => {
     const updatedSeats = unSelectPrev.map((row) => {
       return row.map((seat) => {
         if (seat.id === seatId && !seat.isBooked) {
-          // Get the index of the selected seat in the current row
           const seatIndex = row.indexOf(seat);
 
           let selectedCount = 0;
-          // Count the number of selected seats in the current row
           row.forEach((s) => {
             if (s.isSelected) {
               selectedCount++;
@@ -118,7 +115,6 @@ const Seat = (props) => {
           });
 
           if (selectedCount < ticketNumber) {
-            // Select seats in the same row up to ticketNumber
             for (let i = seatIndex; i < row.length; i++) {
               if (row[i].id !== 0 && !row[i].isBooked && !row[i].isSelected) {
                 row[i].isSelected = true;
